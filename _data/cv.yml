@@ -17,14 +17,6 @@
           contents:
             - Analysis of malware hidden in digital images and network traffic.
             - Development of techniques, tools, and datasets to detect and mitigate steganographic malware. 
-    - title: Master Degree
-      institution: University of Genoa, Italy
-      year: 2019
-      description:
-        - title: Title "Cybersecurity applicata: progettazione e sviluppo di architetture sicure"
-          contents:
-            - Analysis of malware hidden in digital images and network traffic.
-            - Development of techniques, tools, and datasets to detect and mitigate steganographic malware. 
 
 - title: Experience
   type: time_table
