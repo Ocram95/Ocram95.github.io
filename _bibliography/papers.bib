@@ -1,7 +1,85 @@
 ---
 ---
 
-@inproceedings{magecart,
+@article{caviglione2021kernel,
+  title={Kernel-level tracing for detecting stegomalware and covert channels in Linux environments},
+  author={Caviglione, Luca and Mazurczyk, Wojciech and Repetto, Matteo and Schaffhauser, Andreas and Zuppelli, Marco},
+  journal={Computer Networks},
+  volume={191},
+  pages={108010},
+  year={2021},
+  publisher={Elsevier}
+}
+
+@INPROCEEDINGS{9165537,
+  author={Carrega, Alessandro and Caviglione, Luca and Repetto, Matteo and Zuppelli, Marco},
+  booktitle={2020 6th IEEE Conference on Network Softwarization (NetSoft)}, 
+  title={Programmable Data Gathering for Detecting Stegomalware}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={422-429},
+  doi={10.1109/NetSoft48620.2020.9165537}
+}
+
+@inproceedings{10.1145/3465481.3470028,
+author = {Repetto, Matteo and Caviglione, Luca and Zuppelli, Marco},
+title = {Bccstego: A Framework for Investigating Network Covert Channels},
+year = {2021},
+isbn = {9781450390514},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3465481.3470028},
+doi = {10.1145/3465481.3470028},
+abstract = {Modern malware increasingly exploits information hiding to remain undetected while attacking. To this aim, network covert channels, i.e., hidden communication paths established within legitimate flows, can be used to exfiltrate data or exchange commands without getting noticed by firewalls, antivirus, and intrusion detection systems. Since the secret data can be directly injected in various portions of the stream or encoded via suitable alterations of the traffic, spotting hidden communications is a challenging and poorly generalizable task. Moreover, the majority of works addressed IPv4, thus leaving the detection of covert channels targeting IPv6 almost unexplored. This paper presents bccstego, i.e., an inspection framework for computing statistical indicators to reveal covert channels targeting the IPv6 header. The proposed approach has been designed to be easily extended, for instance to search for channels not known a priori. Numerical results demonstrate the effectiveness of our first tool in the bccstego framework as well as its ability to handle high-throughput IPv6 flows without adding additional delays.},
+booktitle = {Proceedings of the 16th International Conference on Availability, Reliability and Security},
+articleno = {68},
+numpages = {7},
+keywords = {eBPF, network covert channel, stegomalware, BPF compiler collection, packet inspection},
+location = {Vienna, Austria},
+series = {ARES '21}
+}
+
+@INPROCEEDINGS{9492661,
+  author={Caviglione, Luca and Zuppelli, Marco and Mazurczyk, Wojciech and Schaffhauser, Andreas and Repetto, Matteo},
+  booktitle={2021 IEEE 7th International Conference on Network Softwarization (NetSoft)}, 
+  title={Code Augmentation for Detecting Covert Channels Targeting the IPv6 Flow Label}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={450-456},
+  doi={10.1109/NetSoft51509.2021.9492661}
+}
+
+@inproceedings{10.1145/3465481.3470067,
+author = {Zuppelli, Marco and Caviglione, Luca},
+title = {PcapStego: A Tool for Generating Traffic Traces for Experimenting with Network Covert Channels},
+year = {2021},
+isbn = {9781450390514},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3465481.3470067},
+doi = {10.1145/3465481.3470067},
+abstract = {The increasing diffusion of malware endowed with steganographic and cloaking capabilities requires tools and techniques for conducting research activities, testing real deployments and elaborating mitigation mechanisms. To investigate attacks targeting network and appliances, a core requirement concerns the availability of suitable traffic traces, which can be used to derive mathematical models for simulation or to develop machine-learning-based countermeasures. Unfortunately, the young nature of threats injecting secrets or cloaking their presence within network traffic, the high protocol-dependent nature of the various embedding processes, and privacy issues, prevent the vast diffusion of datasets to perform research. Therefore, in this paper we present pcapStego, a tool for creating network covert channels within .pcap files. This approach has two major advantages: it allows to prepare large datasets starting from real network traces, and it generates “replayable” conversations useful for both emulating attacks or conduct pentesting campaigns. To prove the effectiveness of the tool, we showcase the generation of network covert channels targeting IPv6 traffic, which is gaining momentum and it is expected to be a major target for future attacks.},
+booktitle = {Proceedings of the 16th International Conference on Availability, Reliability and Security},
+articleno = {95},
+numpages = {8},
+keywords = {traffic traces, covert channels, dataset generation, IPv6, detection},
+location = {Vienna, Austria},
+series = {ARES '21}
+}
+
+@INPROCEEDINGS{sanitization,
+  author={Zuppelli, Marco and Manco, Giuseppe and Caviglione, Luca and Guarascio, Massimo},
+  booktitle={Italian Conference on CyberSecurity (ITASEC 2021)}, 
+  title={Sanitization of Images Containing Stegomalware via Machine Learning Approaches}, 
+  year={2021},
+  volume={2940},
+  number={},
+  pages={374-386},
+}
+
+@inproceedings{10.1145/3538969.3544437,
 author = {Guarascio, Massimo and Zuppelli, Marco and Cassavia, Nunziato and Caviglione, Luca and Manco, Giuseppe},
 title = {Revealing MageCart-like Threats in Favicons via Artificial Intelligence},
 year = {2022},
@@ -14,15 +92,200 @@ abstract = {Modern malware increasingly takes advantage of information hiding to
 booktitle = {Proceedings of the 17th International Conference on Availability, Reliability and Security},
 articleno = {45},
 numpages = {7},
-keywords = {malware, steganography, magecart, artificial intelligence, information hiding},
+keywords = {steganography, magecart, artificial intelligence, information hiding, malware},
 location = {Vienna, Austria},
-series = {ARES '22},
-preview={brownian-motion.gif},
-abbr={AJP},
-bibtex_show={true},
-html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-pdf={example_pdf.pdf},
-altmetric={248277},
-dimensions={true},
-selected={true}
+series = {ARES '22}
 }
+
+@article{heinz2021covert,
+  title={Covert Channels in Transport Layer Security: Performance and Security Assessment.},
+  author={Heinz, Corinna and Zuppelli, Marco and Caviglione, Luca},
+  journal={J. Wirel. Mob. Networks Ubiquitous Comput. Dependable Appl.},
+  volume={12},
+  number={4},
+  pages={22--36},
+  year={2021}
+}
+
+@article{CAVIGLIONE2022100975,
+title = {IPv6CC: IPv6 covert channels for testing networks against stegomalware and data exfiltration},
+journal = {SoftwareX},
+volume = {17},
+pages = {100975},
+year = {2022},
+issn = {2352-7110},
+doi = {https://doi.org/10.1016/j.softx.2022.100975},
+url = {https://www.sciencedirect.com/science/article/pii/S2352711022000024},
+author = {Luca Caviglione and Andreas Schaffhauser and Marco Zuppelli and Wojciech Mazurczyk},
+keywords = {Covert channels, Exfiltration, Network security},
+abstract = {IPv6CC is a suite of network covert channels targeting the IPv6 protocol. Its main scope is supporting penetration test campaigns to evaluate the security of a system against emerging information-hiding-capable attacks or steganographic malware. This paper presents the techniques used to inject data within IPv6 packets, the reference use case and the software architecture of the suite. It also showcases a performance evaluation of the different covert channels offered by IPv6CC, as well as an analysis of their ability to bypass some de-facto standard security tools.}
+}
+
+@inproceedings{cassavia2022federated,
+  title={Federated Learning for the Efficient Detection of Steganographic Threats Hidden in Image Icons},
+  author={Cassavia, Nunziato and Caviglione, Luca and Guarascio, Massimo and Liguori, Angelica and Surace, Giuseppe and Zuppelli, Marco},
+  booktitle={International Conference on Pervasive Knowledge and Collective Intelligence on Web and Social Media},
+  pages={83--95},
+  year={2022},
+  organization={Springer}
+}
+
+@inproceedings{guarascio2022detection,
+  title={Detection of Network Covert Channels in IoT Ecosystems Using Machine Learning},
+  author={Guarascio, Massimo and Zuppelli, Marco and Cassavia, Nunziato and Manco, Giuseppe and Caviglione, Luca},
+  booktitle={Proc. of The Italian Conference on CyberSecurity},
+  volume={3260},
+  pages={102--113},
+  year={2022}
+}
+
+@article{cassavia2022detection,
+  title={Detection of steganographic threats targeting digital images in heterogeneous ecosystems through machine learning},
+  author={Cassavia, Nunziato and Caviglione, Luca and Guarascio, Massimo and Manco, Giuseppe and Zuppelli, Marco},
+  journal={J. Wirel. Mob. Netw. Ubiquit. Comput. Dependable Appl},
+  volume={13},
+  pages={50--67},
+  year={2022}
+}
+
+@inproceedings{cassavia2022ensembling,
+  title={Ensembling Sparse Autoencoders for Network Covert Channel Detection in IoT Ecosystems},
+  author={Cassavia, Nunziato and Caviglione, Luca and Guarascio, Massimo and Liguori, Angelica and Zuppelli, Marco},
+  booktitle={International Symposium on Methodologies for Intelligent Systems},
+  pages={209--218},
+  year={2022},
+  organization={Springer}
+}
+
+@ARTICLE{9779347,
+  author={Zuppelli, Marco and Repetto, Matteo and Schaffhauser, Andreas and Mazurczyk, Wojciech and Caviglione, Luca},
+  journal={IEEE Transactions on Network and Service Management}, 
+  title={Code Layering for the Detection of Network Covert Channels in Agentless Systems}, 
+  year={2022},
+  volume={19},
+  number={3},
+  pages={2282-2294},
+  doi={10.1109/TNSM.2022.3176752}
+}
+
+@article{zuppelli2021effective,
+  title={An Effective and Efficient Approach to Improve Visibility Over Network Communications.},
+  author={Zuppelli, Marco and Carrega, Alessandro and Repetto, Matteo},
+  journal={J. Wirel. Mob. Networks Ubiquitous Comput. Dependable Appl.},
+  volume={12},
+  number={4},
+  pages={89--108},
+  year={2021}
+}
+
+@article{schaffhauser2022efficient,
+  title={Efficient detection and recovery of malicious PowerShell scripts embedded into digital images},
+  author={Schaffhauser, Andreas and Mazurczyk, Wojciech and Caviglione, Luca and Zuppelli, Marco and Hernandez-Castro, Julio},
+  journal={Security and Communication Networks},
+  volume={2022},
+  year={2022},
+  publisher={Hindawi}
+}
+
+@INPROCEEDINGS{10175435,
+  author={Zuppelli, Marco and Repetto, Matteo and Caviglione, Luca and Cambiaso, Enrico},
+  booktitle={2023 IEEE 9th International Conference on Network Softwarization (NetSoft)}, 
+  title={Information Leakages of Docker Containers: Characterization and Mitigation Strategies}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={462-467},
+  doi={10.1109/NetSoft57336.2023.10175435}
+}
+
+@inproceedings{zuppelli2021detecting,
+  title={Detecting Covert Channels Through Code Augmentation.},
+  author={Zuppelli, Marco and Caviglione, Luca and Repetto, Matteo},
+  booktitle={ITASEC},
+  pages={133--144},
+  year={2021}
+}
+
+@article{CAMBIASO2023101576,
+title = {DockerChannel: A framework for evaluating information leakages of Docker containers},
+journal = {SoftwareX},
+volume = {24},
+pages = {101576},
+year = {2023},
+issn = {2352-7110},
+doi = {https://doi.org/10.1016/j.softx.2023.101576},
+url = {https://www.sciencedirect.com/science/article/pii/S2352711023002728},
+author = {Enrico Cambiaso and Luca Caviglione and Marco Zuppelli},
+keywords = {Container security, Cybersecurity, Data leakage},
+abstract = {DockerChannel is a software suite for investigating possible information leakages of Docker containers. Its main scope is to support developers to fully assess the impact of the “loose” isolation of statistics provided by the container engine. It can also help researchers to investigate new attacks leveraging the orchestration of malicious containers. DockerChannel is built around an extensible Python class abstracting the creation of the covert communication mechanism and it can be used both in a general-purpose manner or “bundled” within pre-existing containers, e.g., to check leakages in real cloud-native deployments.}
+}
+
+@article{cassavia2023learning,
+  title={Learning autoencoder ensembles for detecting malware hidden communications in IoT ecosystems},
+  author={Cassavia, Nunziato and Caviglione, Luca and Guarascio, Massimo and Liguori, Angelica and Zuppelli, Marco},
+  journal={Journal of Intelligent Information Systems},
+  pages={1--25},
+  year={2023},
+  publisher={Springer}
+}
+
+@article{cassavia2023federated,
+  title={A federated approach for detecting data hidden in icons of mobile applications delivered via web and multiple stores},
+  author={Cassavia, Nunziato and Caviglione, Luca and Guarascio, Massimo and Liguori, Angelica and Manco, Giuseppe and Zuppelli, Marco},
+  journal={Social Network Analysis and Mining},
+  volume={13},
+  number={1},
+  pages={114},
+  year={2023},
+  publisher={Springer}
+}
+
+@article{caviglione2023orisha,
+  title={ORISHA: Improving Threat Detection through Orchestrated Information Sharing (Discussion Paper)},
+  author={Caviglione, Luca and Comito, Carmela and Guarascio, Massimo and Manco, Giuseppe and Pisani, Francesco Sergio and Zuppelli, Marco},
+  year={2023}
+}
+
+@article{liguori2022using,
+  title={Using AI to face covert attacks in IoT and softwarized scenarios: challenges and opportunities},
+  author={Liguori, Angelica and Mungari, Simone and Zuppelli, Marco and Comito, Carmela and Cambiaso, Enrico and Repetto, Matteo and Guarascio, Massimo and Caviglione, Luca and Manco, Giuseppe},
+  year={2022}
+}
+
+@inproceedings{10.1145/3538969.3544469,
+author = {Caviglione, Luca and Grabowski, Martin and Gutberlet, Kai and Marzecki, Adrian and Zuppelli, Marco and Schaffhauser, Andreas and Mazurczyk, Wojciech},
+title = {Detection of Malicious Images in Production-Quality Scenarios with the SIMARGL Toolkit},
+year = {2022},
+isbn = {9781450396707},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3538969.3544469},
+doi = {10.1145/3538969.3544469},
+abstract = {An increasing trend exploits steganography to conceal payloads in digital images, e.g., to drop malicious executables or to retrieve configuration files. Due to the very attack-specific nature of the exploited hiding mechanisms, developing general detection methods is a hard task. An effective approach concerns the creation of ad-hoc solutions to be integrated within general toolkits, also to holistically face unknown threats. Therefore, this paper discusses the integration of a tool for detecting malicious contents hidden in digital images via the Invoke-PSImage technique within the Secure Intelligent Methods for Advanced Recognition of Malware and Stegomalware framework. Since the real impact of images embedding steganographic threats and the behavior of ad-hoc solutions in realistic scenarios are still unknown territories, this work also showcases a performance evaluation conducted in a nation-wide telecommunication provider. Results demonstrated the effectiveness of the approach and also support the need of modular architectures to face the emerging wave of highly-specialized threats.},
+booktitle = {Proceedings of the 17th International Conference on Availability, Reliability and Security},
+articleno = {46},
+numpages = {7},
+keywords = {Steganography, Information Hiding, Invoke-PSImage},
+location = {Vienna, Austria},
+series = {ARES '22}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

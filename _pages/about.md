@@ -2,22 +2,20 @@
 layout: about
 title: about
 permalink: /
-subtitle: Researcher @ <a href='https://www.imati.cnr.it/'>IMATI - CNR</a>.
+subtitle: 
 
 profile:
   align: right
   image: prof_pic.png
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
-    
-#<p>555 your office number</p>
-#<p>123 your address street</p>
-#<p>Your City, State 12345</p>
+    <p>Genoa, Italy</p>
 
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
+
+news: false  # includes a list of news items
+latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-test
+Hi! I am a researcher @ <a href='https://www.imati.cnr.it/'>IMATI - CNR</a>. I'm interested in Network Security, Steganography and Covert Channels. I have 5 cats, 1 dog, and I like to play guitar and videogames.
