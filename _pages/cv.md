@@ -5,7 +5,7 @@ title: cv
 nav: true
 nav_order: 4
 cv_pdf: example_pdf.pdf
-description: This is a short CV. You can download the PDF for the complete version.
+description: This is a short CV. Download the PDF for the full version.
 toc:
   sidebar: left
 ---
