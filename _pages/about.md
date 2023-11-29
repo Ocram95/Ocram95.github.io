@@ -18,4 +18,4 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi! I am a researcher @ <a href='https://www.imati.cnr.it/'>IMATI - CNR</a>. I'm interested in Network Security, Steganography and Covert Channels. I have 5 cats, 1 dog, and I like to play guitar and videogames.
+Hi! I am a researcher @ <a href='https://www.imati.cnr.it/'>IMATI - CNR</a>. I'm interested in Network Security, Steganography and Covert Channels. I have 5 cats, 1 dog, and I play guitar and videogames.
