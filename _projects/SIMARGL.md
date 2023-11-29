@@ -4,7 +4,7 @@ title: SIMARGL
 description: Secure Intelligent Methods for Advanced Recognition of Malware and Stegomalware
 img: assets/img/simargl.png
 redirect: https://simargl.eu/
-importance: 1
+importance: 2
 category: work
 #related_publications: einstein1956investigations, einstein1950meaning
 #giscus_comments: true
