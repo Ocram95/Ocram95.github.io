@@ -1,12 +1,12 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - Ocram95
+  - lucacav
+  - cybersecurity-cnr
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - Ocram95/pcap_injector
+  - Ocram95/IPv6CC_SoftwareX
+  - cybersecurity-cnr/DockerChannel
+  - lucacav/steg-in-the-wild
+  - lucacav/steg-tools  
+  - mattereppe/bccstego
