@@ -11,12 +11,14 @@
   publisher={Elsevier},
   doi={10.1016/j.comnet.2021.108010},
   preview={comnet.png},
-  bibtex_show={true}
+  bibtex_show={true},
+  abstract = {Modern malware is becoming hard to spot since attackers are increasingly adopting new techniques to elude signature- and rule-based detection mechanisms. Among the others, steganography and information hiding can be used to bypass security frameworks searching for suspicious communications between processes or exfiltration attempts through covert channels. Since the array of potential carriers is very large (e.g., information can be hidden in hardware resources, various multimedia files or network flows), detecting this class of threats is a scarcely generalizable process and gathering multiple behavioral information is time-consuming, lacks scalability, and could lead to performance degradation.
+  In this paper, we leverage the extended Berkeley Packet Filter (eBPF), which is a recent code augmentation feature provided by the Linux kernel, for programmatically tracing and monitoring the behavior of software processes in a very efficient way. To prove the flexibility of the approach, we investigate two realistic use cases implementing different attack mechanisms, i.e., two processes colluding via the alteration of the file system and hidden network communication attempts nested within IPv6 traffic flows. Our results show that even simple eBPF programs can provide useful data for the detection of anomalies, with a minimal overhead. Furthermore, the flexibility to develop and run such programs allows to extract relevant features that could be used for the creation of datasets for feeding security frameworks exploiting AI.}
 }
 
 @INPROCEEDINGS{9165537,
   author={Carrega, Alessandro and Caviglione, Luca and Repetto, Matteo and Zuppelli, Marco},
-  booktitle={2020 6th IEEE Conference on Network Softwarization (NetSoft)}, 
+  booktitle={Proceedings of the 2020 6th IEEE Conference on Network Softwarization (NetSoft)}, 
   title={Programmable Data Gathering for Detecting Stegomalware}, 
   year={2020},
   volume={},
@@ -24,7 +26,8 @@
   pages={422-429},
   doi={10.1109/NetSoft48620.2020.9165537},
   preview={secsoft.png},
-  bibtex_show={true}
+  bibtex_show={true},
+  abstract = {The “arm race” against malware developers requires to collect a wide variety of performance measurements, for instance to face threats leveraging information hiding and steganography. Unfortunately, this process could be time-consuming, lack of scalability and cause performance degradations within computing and network nodes. Moreover, since the detection of steganographic threats is poorly generalizable, being able to collect attack-independent indicators is of prime importance. To this aim, the paper proposes to take advantage of the extended Berkeley Packet Filter to gather data for detecting stegomalware. To prove the effectiveness of the approach, it also reports some preliminary experimental results obtained as the joint outcome of two H2020 Projects, namely ASTRID and SIMARGL.}
 }
 
 @inproceedings{10.1145/3465481.3470028,
@@ -49,7 +52,7 @@ bibtex_show={true}
 
 @INPROCEEDINGS{9492661,
   author={Caviglione, Luca and Zuppelli, Marco and Mazurczyk, Wojciech and Schaffhauser, Andreas and Repetto, Matteo},
-  booktitle={2021 IEEE 7th International Conference on Network Softwarization (NetSoft)}, 
+  booktitle={Proceedings of the 2021 IEEE 7th International Conference on Network Softwarization (NetSoft)}, 
   title={Code Augmentation for Detecting Covert Channels Targeting the IPv6 Flow Label}, 
   year={2021},
   volume={},
@@ -57,12 +60,13 @@ bibtex_show={true}
   pages={450-456},
   doi={10.1109/NetSoft51509.2021.9492661},
   preview={secsoft.png},
-  bibtex_show={true}
+  bibtex_show={true},
+  abstract = {Information hiding is at the basis of a new-wave of malware able to elude common detection mechanisms or remain unnoticed for long periods. To this aim, a key approach exploits network covert channels, i.e., abusive communication paths nested within a legitimate traffic flow. The increasing diffusion of IPv6 makes it attractive for an attacker, especially for the presence of the Flow Label field, which can be manipulated to contain up to 20 secret bits per packet. Unfortunately, gathering data to implement a standalone detection mechanism or to support third-party security tools is a poorly generalizable process and often leads to scalability issues. This paper showcases how to take advantage of code augmentation features (i.e., the extended Berkeley Packet Filter) to detect covert channels targeting the IPv6 Flow Label. To prove its effectiveness, the proposed approach has been tested against Internet-wide traffic traces collected in the wild. Results indicate that it is possible to spot the channel while mitigating the memory footprint and the computational burden (e.g., the processed traffic only experience an additional delay of a few nanoseconds).}
 }
 
 @inproceedings{10.1145/3465481.3470067,
 author = {Zuppelli, Marco and Caviglione, Luca},
-title = {PcapStego: A Tool for Generating Traffic Traces for Experimenting with Network Covert Channels},
+title = {pcapStego: A Tool for Generating Traffic Traces for Experimenting with Network Covert Channels},
 year = {2021},
 isbn = {9781450390514},
 publisher = {Association for Computing Machinery},
@@ -82,7 +86,7 @@ bibtex_show={true}
 
 @INPROCEEDINGS{sanitization,
   author={Zuppelli, Marco and Manco, Giuseppe and Caviglione, Luca and Guarascio, Massimo},
-  booktitle={Italian Conference on CyberSecurity (ITASEC 2021)}, 
+  booktitle={Proceedings of the Italian Conference on CyberSecurity (ITASEC 2021)}, 
   title={Sanitization of Images Containing Stegomalware via Machine Learning Approaches}, 
   year={2021},
   volume={2940},
@@ -90,7 +94,8 @@ bibtex_show={true}
   pages={374-386},
   preview={itasec.png},
   bibtex_show={true},
-  html={http://ceur-ws.org/Vol-2940/paper31.pdf}
+  html={http://ceur-ws.org/Vol-2940/paper31.pdf},
+  abstract = {In recent years, steganographic techniques have become increasingly exploited by malware to avoid detection and remain unnoticed for long periods. Among the various approaches observed in real attacks, a popular one exploits embedding malicious information within innocent-looking pictures. In this paper, we present a machine learning technique for sanitizing images containing malicious data injected via the Invoke-PSImage method. Specifically, we propose to use a deep neural network realized through a residual convolutional autoencoder to disrupt the malicious information hidden within an image without altering its visual quality. The experimental evaluation proves the effectiveness of our approach on a dataset of images injected with PowerShell scripts. Our tool removes the injected artifacts and inhibits the reconstruction of the scripts, partially recovering the initial image quality.}
 }
 
 @inproceedings{10.1145/3538969.3544437,
@@ -123,7 +128,8 @@ bibtex_show={true}
   year={2021},
   preview={jowua.png},
   bibtex_show={true},
-  doi = {10.22667/JOWUA.2021.12.31.022}
+  doi = {10.22667/JOWUA.2021.12.31.022},
+  abstract = {The ability of creating covert channels within network traffic is now largely exploited by malware to elude detection, remain unnoticed while exfiltrating data or coordinating an attack. As a consequence, designing a network covert channel or anticipating its exploitation are prime goals to fully understand the security of modern network and computing environments. Due to its ubiquitous availability and large diffusion, Transport Layer Security (TLS) traffic may quickly become the target of malware or attackers wanting to establish a hidden communication path through the Internet. Therefore, this paper investigates mechanisms that can be used to create covert channels within TLS conversations. Experimental results also demonstrated the inability of de-facto standard network security tools to spot TLS-based covert channels out of the box.}
 }
 
 @article{CAVIGLIONE2022100975,
@@ -144,29 +150,31 @@ bibtex_show={true}
 @inproceedings{cassavia2022federated,
   title={Federated Learning for the Efficient Detection of Steganographic Threats Hidden in Image Icons},
   author={Cassavia, Nunziato and Caviglione, Luca and Guarascio, Massimo and Liguori, Angelica and Surace, Giuseppe and Zuppelli, Marco},
-  booktitle={International Conference on Pervasive Knowledge and Collective Intelligence on Web and Social Media},
+  booktitle={Proceedings of the International Conference on Pervasive Knowledge and Collective Intelligence on Web and Social Media},
   pages={83--95},
   year={2022},
   organization={Springer},
   preview={persom.png},
   bibtex_show={true},
-  doi = {10.1007/978-3-031-31469-8_6}
+  doi = {10.1007/978-3-031-31469-8_6},
+  abstract = {An increasing number of threat actors takes advantage of information hiding techniques to prevent detection or to drop payloads containing attack routines. With the ubiquitous diffusion of mobile applications, high-resolution icons should be considered a very attractive carrier for cloaking malicious information via steganographic mechanisms. Despite machine learning approaches proven to be effective to detect hidden payloads, the mobile scenario could challenge their deployment in realistic use cases, for instance due to scalability constraints. Therefore, this paper introduces an approach based on federated learning able to prevent hazards characterizing production-quality scenarios, including different privacy regulations and lack of comprehensive datasets. Numerical results indicate that our approach achieves performances similar to those of centralized solutions.}
 }
 
 @inproceedings{guarascio2022detection,
   title={Detection of Network Covert Channels in IoT Ecosystems Using Machine Learning},
   author={Guarascio, Massimo and Zuppelli, Marco and Cassavia, Nunziato and Manco, Giuseppe and Caviglione, Luca},
-  booktitle={Proc. of The Italian Conference on CyberSecurity (ITASEC)},
+  booktitle={Proceedings of The Italian Conference on CyberSecurity (ITASEC)},
   volume={3260},
   pages={102--113},
   year={2022},
   preview={itasec.png},
   bibtex_show={true},
-  html={https://ceur-ws.org/Vol-3260/paper7.pdf}
+  html={https://ceur-ws.org/Vol-3260/paper7.pdf},
+  abstract = {Steganographic techniques and covert channels are becoming exploited by a wide-range of malware to avoid detection and bypass network security tools. With the ubiquitous diffusion of IoT nodes, such offensive schemes are expected to be used to exfiltrate data or to covertly orchestrate botnets composed of resource-constrained nodes (eg, as it happens in Mirai). Therefore, in this paper, we present a machine learning technique for the detection of network covert channels targeting the TTL field of IPv4 datagrams. Specifically, we propose to use Autoencoders to reveal anomalous traffic behaviors. The experimental evaluation performed over realistic traffic traces showcases the effectiveness of our approach.}
 }
 
 @article{cassavia2022detection,
-  title={Detection of steganographic threats targeting digital images in heterogeneous ecosystems through machine learning},
+  title={Detection of Steganographic Threats Targeting Digital Images in Heterogeneous Ecosystems Through Machine Learning},
   author={Cassavia, Nunziato and Caviglione, Luca and Guarascio, Massimo and Manco, Giuseppe and Zuppelli, Marco},
   journal={Journal of Wireless Mobile Networks, Ubiquitous Computing, and Dependable Applications},
   volume={13},
@@ -174,19 +182,21 @@ bibtex_show={true}
   year={2022},
   preview={jowua.png},
   bibtex_show={true},
-  doi={10.22667/JOWUA.2022.09.30.050}
+  doi={10.22667/JOWUA.2022.09.30.050},
+  abstract = {Steganography is increasingly exploited by malware to avoid detection and to implement different advanced offensive schemes. An attack paradigm expected to become widely used in the near future concerns cloaking data in innocent-looking pictures, which are normally used by several devices and applications, for instance to enhance the user experience. Therefore, with the increasing popularity of application stores, availability of cross-platform services, and the adoption of various devices for entertainment and business duties, the chances for hiding payloads in digital pictures multiply in an almost unbounded manner. To face such a new challenge, this paper presents an ecosystem exploiting a classifier based on Deep Neural Networks to reveal the presence of images embedding malicious assets. Collected results indicated the effectiveness of the approach to detect malicious contents, even in the presence of an attacker trying to elude our framework via basic obfuscation techniques (ie, zip compression) or the use of alternative encoding schemes (ie, Base64). Specifically, the achieved accuracy is always ∼100% with minor decays in terms of precision and recall caused by the presence of additional information caused by compression.}
 }
 
 @inproceedings{cassavia2022ensembling,
   title={Ensembling Sparse Autoencoders for Network Covert Channel Detection in IoT Ecosystems},
   author={Cassavia, Nunziato and Caviglione, Luca and Guarascio, Massimo and Liguori, Angelica and Zuppelli, Marco},
-  booktitle={International Symposium on Methodologies for Intelligent Systems},
+  booktitle={Proceedings of the International Symposium on Methodologies for Intelligent Systems},
   pages={209--218},
   year={2022},
   organization={Springer},
   preview={ismis.png},
   bibtex_show={true},
-  doi={10.1007/978-3-031-16564-1_20}
+  doi={10.1007/978-3-031-16564-1_20},
+  abstract = {Network covert channels are becoming exploited by a wide-range of threats to avoid detection. Such offensive schemes are expected to be also used against IoT deployments, for instance to exfiltrate data or to covertly orchestrate botnets composed of simple devices. Therefore, we illustrate a solution based on Deep Learning for the detection of covert channels targeting the TTL field of IPv4 datagrams. To this aim, we take advantage of an Autoencoder ensemble to reveal anomalous traffic behaviors. An experimentation on realistic traffic traces demonstrates the effectiveness of our approach.}
 }
 
 @ARTICLE{9779347,
@@ -199,7 +209,8 @@ bibtex_show={true}
   pages={2282-2294},
   doi={10.1109/TNSM.2022.3176752},
   preview={tnsm.png},
-  bibtex_show={true}
+  bibtex_show={true},
+  abstract = {The growing interest in agentless and serverless environments for the implementation of virtual/container network functions makes monitoring and inspection of network services challenging tasks. A major requirement concerns the agility of deploying security agents at runtime, especially to effectively address emerging and advanced attack patterns. This work investigates a framework leveraging the extended Berkeley Packet Filter to create ad-hoc security layers in virtualized architectures without the need of embedding additional agents. To prove the effectiveness of the approach, we focus on the detection of network covert channels, i.e., hidden/parasitic network conversations difficult to spot with legacy mechanisms. Experimental results demonstrate that different types of covert channels can be revealed with a good accuracy while using limited resources compared to existing cybersecurity tools (i.e., Zeek and libpcap).}
 }
 
 @article{zuppelli2021effective,
@@ -212,11 +223,12 @@ bibtex_show={true}
   year={2021},
   preview={jowua.png},
   bibtex_show={true},
-  doi={10.22667/JOWUA.2021.12.31.089}
+  doi={10.22667/JOWUA.2021.12.31.089},
+  abstract = {Modern applications and services increasingly leverage network infrastructures, cyber-physical systems and distributed computing paradigms to offer unprecedented pervasive and immersive experience to users. Unfortunately, the massive usage of virtualization models, the mix of public and private infrastructures, and the large adoption of service-oriented architectures make the deployment and operation of traditional cyber-security appliances difficult. Although cyber-security architectures are already migrating towards distributed models and smarter detectors to account for ever-evolving forms of malware and attacks, they still miss effective and efficient mechanisms to programmatically inspect these new environments. In this paper, we investigate the use of the extended Berkeley Packet Filter for inspecting network communications. We show how this framework can be employed to selectively gather various information describing a network conversation (eg, packet headers), in order to spot emerging threats like malicious software taking advantage of hidden communications. Results indicate that our approach can be used to inspect network traffic in a more efficient way compared to other traditional mechanisms.}
 }
 
 @article{schaffhauser2022efficient,
-  title={Efficient detection and recovery of malicious PowerShell scripts embedded into digital images},
+  title={Efficient Detection and Recovery of Malicious PowerShell Scripts Embedded into Digital Images},
   author={Schaffhauser, Andreas and Mazurczyk, Wojciech and Caviglione, Luca and Zuppelli, Marco and Hernandez-Castro, Julio},
   journal={Security and Communication Networks},
   volume={2022},
@@ -224,12 +236,13 @@ bibtex_show={true}
   publisher={Hindawi},
   preview={scn.png},
   bibtex_show={true},
-  doi={10.1155/2022/4477317}
+  doi={10.1155/2022/4477317},
+  abstract = {Due to steady improvements in defensive systems, malware developers are turning their attention to mechanisms for cloaking attacks as long as possible. A recent trend exploits techniques like Invoke-PSImage, which allows embedding a malicious script within an innocent-looking image, for example, to smuggle data into compromised devices. To address such a class of emerging threats, new mechanisms are needed, since standard tools fail in their detection or offer poor performance. To this aim, this work introduces Mavis, an efficient and highly accurate method for detecting hidden payloads, retrieving the embedded information, and estimating its size. Experimental results collected by considering real-world malicious PowerShell scripts showcase that Mavis can detect attacks with a high accuracy (100%) while keeping the rate of false positives and false negatives very low (0.01% and 0%, respectively). The proposed approach outperforms other solutions available in the literature or commercially through “as a service” model.}
 }
 
 @INPROCEEDINGS{10175435,
   author={Zuppelli, Marco and Repetto, Matteo and Caviglione, Luca and Cambiaso, Enrico},
-  booktitle={2023 IEEE 9th International Conference on Network Softwarization (NetSoft)}, 
+  booktitle={Proceedings of the 2023 IEEE 9th International Conference on Network Softwarization (NetSoft)}, 
   title={Information Leakages of Docker Containers: Characterization and Mitigation Strategies}, 
   year={2023},
   volume={},
@@ -238,25 +251,27 @@ bibtex_show={true}
   doi={10.1109/NetSoft57336.2023.10175435},
   selected={true},
   preview={secsoft.png},
-  bibtex_show={true}
+  bibtex_show={true},
+  abstract = {Compared to classic virtual machines, containers offer lightweight and dynamic execution environments. Hence, they are core building blocks for the development of future softwarized networks and cloud-native applications. However, containers still pose many security challenges, which are less understood compared to other virtualization paradigms. An important aspect often neglected concerns techniques enabling containers to leak data outside their execution perimeters, e.g., to exfiltrate sensitive information or coordinate attacks. In this paper we investigate security impacts of covert communications based on the looser isolation of memory statistics information. Our characterization indicates that the investigation of system calls should be considered a prime tool to reveal the presence of collusive attack schemes. We also elaborate on two mitigation techniques: the first entails prevention via “hardening” configurations of containers, while the second implements a run-time disruption mechanism.}
 }
 
 @inproceedings{zuppelli2021detecting,
   title={Detecting Covert Channels Through Code Augmentation},
   author={Zuppelli, Marco and Caviglione, Luca and Repetto, Matteo},
-  booktitle={ITASEC},
+  booktitle={Proceeding of the Italian Conference on CyberSecurity (ITASEC)},
   pages={133--144},
   year={2021},
   preview={itasec.png},
   bibtex_show={true},
-  html={http://ceur-ws.org/Vol-2940/paper12.pdf}
+  html={http://ceur-ws.org/Vol-2940/paper12.pdf},
+  abstract = {Modern malware increasingly exploits information hiding or steganography to elude security frameworks and remain unnoticed for long periods. To this aim, a prime technique relies upon the ability of creating covert channels to bypass the limits imposed by a sandbox or to exfiltrate data towards a remote server. Unfortunately, detecting a covert channel is not a trivial task and often requires to inspect a composite set of information, eg, the behavior of a software or statistical indicators of network traffic. Therefore, in this paper we investigate the adoption of code augmentation features offered by the Linux kernel to gather data useful to reveal the presence of covert communications. To prove the effectiveness of the approach, we tested a lightweight program to detect covert channels targeting IPv6 conversations. Results indicate that technologies like the extended Berkeley Packet Filter can offer a foundation to frameworks for spotting and mitigating covert communications.}
 }
 
 @article{CAMBIASO2023101576,
-title = {DockerChannel: A framework for evaluating information leakages of Docker containers},
+title = {DockerChannel: A Framework for Evaluating Information Leakages of Docker Containers},
 journal = {SoftwareX},
 volume = {24},
-pages = {101576},
+pages = {101576:1-101576:7},
 year = {2023},
 issn = {2352-7110},
 doi = {https://doi.org/10.1016/j.softx.2023.101576},
@@ -270,7 +285,7 @@ bibtex_show={true}
 }
 
 @article{cassavia2023learning,
-  title={Learning autoencoder ensembles for detecting malware hidden communications in IoT ecosystems},
+  title={Learning Autoencoder Ensembles for Detecting Malware Hidden Communications in IoT Ecosystems},
   author={Cassavia, Nunziato and Caviglione, Luca and Guarascio, Massimo and Liguori, Angelica and Zuppelli, Marco},
   journal={Journal of Intelligent Information Systems},
   pages={1--25},
@@ -279,11 +294,12 @@ bibtex_show={true}
   selected={true},
   preview={jiis.png},
   bibtex_show={true},
-  doi={10.1007/s10844-023-00819-8}
+  doi={10.1007/s10844-023-00819-8},
+  abstract = {Modern IoT ecosystems are the preferred target of threat actors wanting to incorporate resource-constrained devices within a botnet or leak sensitive information. A major research effort is then devoted to create countermeasures for mitigating attacks, for instance, hardware-level verification mechanisms or effective network intrusion detection frameworks. Unfortunately, advanced malware is often endowed with the ability of cloaking communications within network traffic, e.g., to orchestrate compromised IoT nodes or exfiltrate data without being noticed. Therefore, this paper showcases how different autoencoder-based architectures can spot the presence of malicious communications hidden in conversations, especially in the TTL of IPv4 traffic. To conduct tests, this work considers IoT traffic traces gathered in a real setting and the presence of an attacker deploying two hiding schemes (i.e., naive and “elusive” approaches). Collected results showcase the effectiveness of our method as well as the feasibility of deploying autoencoders in production-quality IoT settings.}
 }
 
 @article{cassavia2023federated,
-  title={A federated approach for detecting data hidden in icons of mobile applications delivered via web and multiple stores},
+  title={A Federated Approach for Detecting Data Hidden in Icons of Mobile Applications Delivered via Web and Multiple Stores},
   author={Cassavia, Nunziato and Caviglione, Luca and Guarascio, Massimo and Liguori, Angelica and Manco, Giuseppe and Zuppelli, Marco},
   journal={Social Network Analysis and Mining},
   volume={13},
@@ -294,7 +310,8 @@ bibtex_show={true}
   selected={true},
   preview={snam.png},
   bibtex_show={true},
-  doi={10.1007/s13278-023-01121-9}
+  doi={10.1007/s13278-023-01121-9},
+  abstract = {An increasing volume of malicious software exploits information hiding techniques to cloak additional attack stages or bypass frameworks enforcing security. This trend has intensified with the growing diffusion of mobile ecosystems, and many threat actors now conceal scripts or configuration data within high-resolution icons. Even if machine learning has proven to be effective in detecting various hidden payloads, modern mobile scenarios pose further challenges in terms of scalability and privacy. In fact, applications can be retrieved from multiple stores or directly from the Web or social media. Therefore, this paper introduces an approach based on federated learning to reveal information hidden in high-resolution icons bundled with mobile applications. Specifically, multiple nodes are used to mitigate the impact of different privacy regulations, the lack of comprehensive datasets, or the computational burden arising from distributed stores and unofficial repositories. Results collected through simulations indicate that our approach achieves performances similar to those of centralized blueprints. Moreover, federated learning demonstrated its effectiveness in coping with simple “obfuscation” schemes like Base64 encoding and zip compression used by attackers to avoid detection.}
 }
 
 @article{caviglione2023orisha,
@@ -304,7 +321,8 @@ bibtex_show={true}
   selected={true},
   preview={sebd.png},
   bibtex_show={true},
-  html={https://ceur-ws.org/Vol-3478/paper59.pdf}
+  html={https://ceur-ws.org/Vol-3478/paper59.pdf},
+  abstract = {}
 }
 
 @article{liguori2022using,
@@ -313,7 +331,8 @@ bibtex_show={true}
   year={2022},
   preview={italia.png},
   bibtex_show={true},
-  html={https://www.ital-ia2023.it/media/papers/paper37.pdf}
+  html={https://www.ital-ia2023.it/media/papers/paper37.pdf},
+  abstract = {The exponential growth in the number of cyber threats requires sharing in a timely and efficient manner a wide range of Indicators of Compromise (IoCs), ie, fragments of forensics data that can be used to recognize malicious network or system activities. To this aim, a suitable architecture is required, especially to distribute and process the various IoCs. Unfortunately, the continuous creation of offensive techniques, along with the diffusion of advanced persistent threats, imposes the ability to update and extend the platform used to manage the multitude of IoCs collected in the wild. In this paper, we present the ORISHA architecture, which takes advantage of a distributed threat detection system to match performance and scalability requirements. The paper also discusses how the platform can be extended to handle the most recent “stealthy” malware as well as campaigns aimed at spreading fake news.}
 }
 
 @inproceedings{10.1145/3538969.3544469,
