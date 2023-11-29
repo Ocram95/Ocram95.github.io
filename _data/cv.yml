@@ -3,85 +3,78 @@
   contents:
     - name: Full Name
       value: Marco Zuppelli
-    - name: Languages
-      value: Italian, English
+    - name: e-mail
+      value: marco.zuppelli@ge.imati.cnr.it
+
+- title: Research Activity
+  type: list
+  contents:
+    - TODO
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Researcher
+      institution: Institute for Applied Mathemathics and Information Technologies - National Research Council of Italy, Genoa, Italy
+      year: 2023 - Today
+      description:
+        - Definition of the functional and software architecture for the interoperability, protection, scalability and replicability of the Spoke 1 demonstrators - RAISE
+    - title: Research Fellow
+      institution: Institute for Applied Mathemathics and Information Technologies - National Research Council of Italy, Genoa, Italy
+      year: 2019 - 2023
+      description:
+        - Analysis, detection and mitigation of cyber threats endowed with steganographic capabilities
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
+    - title: PhD in Computer Science and Systems Engineering
       institution: University of Genoa, Italy
       year: 2023
       description:
         - title: Title "Detection and Mitigation Techniques for Steganographic Malware"
           contents:
-            - Analysis of malware hidden in digital images and network traffic.
-            - Development of techniques, tools, and datasets to detect and mitigate steganographic malware. 
-
-- title: Experience
-  type: time_table
-  contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+            - Analysis of malware hidden in digital images and network traffic
+            - Development of techniques, tools, and datasets to detect and mitigate steganographic malware
+    - title: Master Degree in Computer Engineering
+      institution: University of Genoa, Italy
+      year: 2019
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - title: Title "Cybersecurity applicata, progettazione e sviluppo di architetture sicure"
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
+            - Deployment of security techniques and mechanisms in the software development life cycle
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
-
-- title: Academic Interests
+- title: Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Technical Skills
       items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Steganography and information hiding techniques applied to digital images, network traffic, and process
+        - Tools for software/hardware observability
+        - Intrusion detection systems and threat modeling software
+        - Software Secure Development Life Cycle
+        - Python, C, C#, Java/Android, Matlab, Latex, HTML
+        - macOS, Linux, Windows
+        - VirtualBox, Docker
+    - title: Language Skills
       items:
-        - Description 1.
-        - Description 2.
+        - Italian, native language
+        - English, C1
 
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+# - title: Honors and Awards
+#   type: time_table
+#   contents:
+#     - year: 1921
+#       items: 
+#         - Nobel Prize in Physics 
+#         - Matteucci Medal
+#     - year: 2029
+#       items: 
+#         - Max Planck Medal
+
+
+
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
